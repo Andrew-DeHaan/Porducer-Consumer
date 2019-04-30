@@ -79,7 +79,7 @@ public class ProducerConsumer
 			}
 		    catch(InterruptedException ex)
 			{
-			    
+			    contine;
 			}
 		    Random rand = new Random();
 		    int  n = rand.nextInt(50) + 1;
@@ -108,6 +108,7 @@ public class ProducerConsumer
 			}
 		    catch(InterruptedException ex)
 			{
+			    continue;
 			}
 		    busy();
 		    pc.remove_number();
